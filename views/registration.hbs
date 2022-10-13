@@ -1,0 +1,53 @@
+<div class="form-container">
+  <header class="form_header">
+    <h1>
+      Registration Form
+    </h1>
+  </header>
+   <form id="form" class="form" method="POST" action="/users/register" enctype="application/x-www-form-urlencoded">
+     <div class="form__control">
+       <label for="username" class="form__label">Username</label>
+       <input type="text" name="username" id="form__username" placeholder="Enter username" required>
+       <small class="form__error-msg">Username must be at least 3 characters and must being with alphabet</small>
+     </div>
+ 
+     <div class="form__control">
+       <label for="email" class="form__label">Email</label>
+       <input type="email" name="email" id="form__email" placeholder="Enter Email" required>
+       <small class="form__error-msg">Email is not valid</small>
+     </div>
+ 
+     <div class="form__control">
+       <label for="password" class="form__label">Password</label>
+       <input type="password" name="password" id="form__password" placeholder="Enter password" required>
+       <small class="form__error-msg">Password must be at least 8 characters and contain 1 Uppercase and a special
+         character</small>
+     </div>
+ 
+     <div class="form__control">
+       <label for="cpassword" class="form__label">Confirm Password</label>
+       <input type="password" name="cpassword" id="form__password2" placeholder="Enter password again" required>
+       <small class="form__error-msg">Passwords don't match</small>
+     </div>
+ 
+     <div>
+       <input type="checkbox" name="age" id="form__age" required>
+       <small class="form__error-msg">Please check if you are 13+ years</small>
+       <label for="form__age" class="form__label">Please check if you are 13+ years</label>
+     </div>
+ 
+     <div>
+       <input type="checkbox" name="tos" id="form__tos" required>
+       <small class="form__error-msg">Terms of Service</small>
+       <label for="form__tos" class="form__label"></label>
+       <a href="#">Terms of Service</a>
+     </div>
+ 
+     <button id="submit" class="btn btn-success login-submit
+    form-button" type="submit">Submit</button>
+    
+     
+   </form>
+ 
+ </div>
+ 

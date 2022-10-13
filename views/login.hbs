@@ -1,0 +1,35 @@
+<div class="form-container">
+    <header class="form-header">
+        <h1>
+            Log in Form
+        </h1>
+    </header>
+    <form id="login-form" class="form-grid-login" method="POST"
+    action="/users/login"
+    enctype="application/x-www-form-urlencoded" required name="username">
+    <label class="tags log-lbl-username"
+    for="username">Username</label>
+    <input class="text-input log-input-username" id="username"
+    type="text" placeholder="Username" required
+        name="username">
+
+    <label class="tags log-lbl-password"
+    for="password">Password</label>
+    <input class="text-input log-input-password" id="password"
+    type="password" placeholder="Password" required
+        name="password" required name="password">
+
+    <button id="submit" class="btn btn-success login-submit
+    form-button" type="submit">Submit</button>
+    
+{{!-- <div>
+       <input type="checkbox" name="tos" id="form__tos">
+       <small class="form__error-msg">Please check if you are 13+ years</small>
+       <label for="form__tos" class="form__label" ></label>
+       <a href="#">Terms of Service</a>
+     </div> --}}
+    </form>
+    <div id="make-account">Create an account!
+        <a href="/registration">Register Here!</a>
+    </div>
+</div>
